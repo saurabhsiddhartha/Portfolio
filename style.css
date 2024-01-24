@@ -1,0 +1,179 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+/* body header */
+
+#body-header {
+  height: 65vh;
+  opacity: 0.8;
+  background-image: url("/images/image2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 1rem;
+}
+
+.horizantal-list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.horizantal-list li {
+  display: inline-block;
+  margin: 0px 8px 8px 0px;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.horizantal-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu li a {
+  transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+  color: lightgrey;
+  border-bottom: 1px solid white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Name and social icons */
+
+#name-social-container {
+  margin-top: 20vh;
+}
+
+#my-name {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons li a i {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+  box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/* Section classes */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+section:nth-child(2n) {
+  background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+  background-color: white;
+}
+
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#my-image {
+  height: 12rem;
+  width: 12rem;
+  margin: auto;
+  margin-top: -17vh;
+}
+
+#my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-image: url(images/image3.jpeg);
+  background-size: cover;
+  border: 3px solid white;
+  box-shadow: 1px 1px 10px 2px lightgrey;
+  transition: transform 0.4s ease-in-out;
+}
+
+#my-image img:hover {
+  transform: scale(1.07);
+}
+
+#about-para {
+  text-align: center;
+  text-align: justify;
+  font-size: 1.3rem;
+  width: 70%;
+}
+
+.skill-display {
+  width: 74%;
+  padding: 10px;
+  margin-bottom: 30px; 
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+.skill-progress{
+  width: 11rem;
+  height: inherit;
+  overflow: hidden;
+  border-radius: 1rem; 
+  margin: 25px;
+  background-color: lightgrey;
+  box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+}
+ 
+.skill-name span{
+  color: black;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: 1rem; 
+   
+}
+ 
+.sixty-percent{
+  background-color: rgb(170, 225, 238);
+  width: 60%;
+}
+.eighty-percent{
+  background-color: rgb(204, 190, 38);
+  width: 80%;
+}
+.eighty-percent{
+  background-color: rgb(204, 190, 38);
+  width: 80%;
+}
+.seventy-percent{
+  background-color: rgb(204, 190, 38);
+  width: 70%;
+}
+.seventy-percent{
+  background-color: rgb(204, 190, 38);
+  width: 70%;
+}
+.fifty-percent{
+  background-color: rgb(223, 76, 113);
+  width: 50%;
+}
+.eighty-percent{
+  background-color: rgb(15, 236, 125);
+  width: 80%;
+}
