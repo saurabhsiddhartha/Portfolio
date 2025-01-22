@@ -19,12 +19,7 @@ app.get('/', (req, res) => {
 
 // Handle form submission and send email
 app.post('/', async (req, res) => {
-    const { user, email, message } = req.body;
-
-    console.log('User:', user);
-    console.log('Email:', email);
-    console.log('Message:', message);
-
+    const { user, email, message } = req.body; 
     // Set up Nodemailer transporter
     const transporter = nodemailer.createTransport({
         service: 'Gmail',
