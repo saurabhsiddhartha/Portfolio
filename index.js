@@ -10,11 +10,11 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'root')));
 
 // Route to serve the form
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'root', 'index.html'));
 });
 
 // Handle form submission and send email
