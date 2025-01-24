@@ -31,7 +31,7 @@ app.post('/', async (req, res) => {
 
     // Email options
     const mailOptions = {
-        from: email, // Always use your own email
+        from: email, 
         to: process.env.EMAIL_USER,   // Your personal email to receive messages
         subject: `Message from ${user}`,
         text: `Name: ${user}\nEmail: ${email}\nMessage: ${message}`,
@@ -41,7 +41,7 @@ app.post('/', async (req, res) => {
         // Send the email
         await transporter.sendMail(mailOptions);
         console.log('Email sent successfully');
-        res.redirect('#contact'); // Redirect back to the homepage
+        res.redirect('#contact');  
     } catch (error) {
         console.error('Error sending email:', error.stack);
         res.status(500).send('Failed to send email');
