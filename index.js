@@ -18,20 +18,19 @@ app.get('/', (req, res) => {
 });
 
 // Handle form submission and send email
-app.post('/', async (req, res) => {
+app.post('/', async (req, res ,e) => {
+    e.preventDefault()
     const { user, email, message } = req.body; 
     // Set up Nodemailer transporter
     const transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 587, // Use 465 for SSL or 587 for TLS
-        secure: false, // Set to true if using port 465
-        auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS,
-        },
-    });
-    
-
+    host: 'smtp.gmail.com',
+    port: 465, // SSL port
+    secure: true, // true for port 465
+    auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+    },
+}); 
     // Email options
     const mailOptions = {
         from: email, 
