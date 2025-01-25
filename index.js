@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 
 // Handle form submission and send email
 app.post('/', async (req, res ,e) => {
-    e.preventDefault()
+    
     const { user, email, message } = req.body; 
     // Set up Nodemailer transporter
     const transporter = nodemailer.createTransport({
