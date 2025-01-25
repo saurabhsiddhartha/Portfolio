@@ -392,6 +392,7 @@
 
  .contact-form textarea {
    width: 100%;
+   color: white;
    height: 4rem;
    border: none;
    border-bottom: 1px solid white;

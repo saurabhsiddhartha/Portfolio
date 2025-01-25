@@ -22,12 +22,15 @@ app.post('/', async (req, res) => {
     const { user, email, message } = req.body; 
     // Set up Nodemailer transporter
     const transporter = nodemailer.createTransport({
-        service: 'Gmail',
+        host: 'smtp.gmail.com',
+        port: 587, // Use 465 for SSL or 587 for TLS
+        secure: false, // Set to true if using port 465
         auth: {
-            user: process.env.EMAIL_USER, // Load from .env
-            pass: process.env.EMAIL_PASS, // Load from .env
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS,
         },
     });
+    
 
     // Email options
     const mailOptions = {
